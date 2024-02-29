@@ -12,12 +12,15 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(height: 20,),
-              Text("Expanded and Flexible",
-              style: TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.bold,
+              SizedBox(
+                height: 20,
               ),
+              Text(
+                "Expanded and Flexible",
+                style: TextStyle(
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               Expanded(
                 child: SizedBox(
@@ -34,7 +37,9 @@ class HomeScreen extends StatelessWidget {
                       color: Colors.purple,
                     ),
                   ),
-                  SizedBox(width: 20,),
+                  SizedBox(
+                    width: 20,
+                  ),
                   Flexible(
                     child: Container(
                       height: 50,
@@ -42,7 +47,9 @@ class HomeScreen extends StatelessWidget {
                       color: Colors.purple,
                     ),
                   ),
-                  SizedBox(width: 20,),
+                  SizedBox(
+                    width: 20,
+                  ),
                   Flexible(
                     child: Container(
                       height: 50,
@@ -68,7 +75,9 @@ class HomeScreen extends StatelessWidget {
                       color: Colors.orange,
                     ),
                   ),
-                  SizedBox(width: 20,),
+                  SizedBox(
+                    width: 20,
+                  ),
                   Expanded(
                     child: Container(
                       height: 50,
@@ -77,8 +86,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              Expanded(child: SizedBox(height: 30,)),
-
+              Expanded(
+                  child: SizedBox(
+                height: 30,
+              )),
             ],
           ),
         ),
