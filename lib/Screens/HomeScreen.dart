@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task_1/Widgets/Container%20Widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,10 +8,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(20.0),
         child: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
                 height: 20,
@@ -28,35 +29,19 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Flexible(
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      color: Colors.purple,
-                    ),
+                  ContainerWidget(color: Colors.purple),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  ContainerWidget(
+                    color: Colors.purple,
                   ),
                   SizedBox(
                     width: 20,
                   ),
-                  Flexible(
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      color: Colors.purple,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Flexible(
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      color: Colors.purple,
-                    ),
-                  ),
+                  ContainerWidget(color: Colors.purple),
                 ],
               ),
               Expanded(
@@ -65,15 +50,10 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Flexible(
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      color: Colors.orange,
-                    ),
+                  ContainerWidget(
+                    color: Colors.orange,
                   ),
                   SizedBox(
                     width: 20,
